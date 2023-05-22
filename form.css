@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
+    padding-left: 500px;
     /* display: flex; */
     justify-content: center;
     align-items: center;
@@ -9,9 +10,19 @@ body {
   }
   .container {
     max-width: 550px;
+    background: linear-gradient(#fa9dea 50%, rgb(161, 238, 248) 50%);
+    background-size: 100% 200%;
+    background-position: bottom;
     /* margin: 20px; */
-    padding-left: 500px;
-
+    /* background-color: #fff; */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 30px;
+    transform: perspective(800px) rotateX(0deg); /* Enables hardware acceleration for smoother animation */
+    transition: background-position 0.9s ease-in-out;
+  }
+  .container:hover {
+    background-position: top;
   }
   
   h1 {
